@@ -1,4 +1,7 @@
+<<<<<<< HEAD
 #!/bin/sh
+=======
+>>>>>>> 03bbdd3a623e3e9e6c357abd6945e23bbf83c846
 # Copyright 2022 Google LLC
 
 # Licensed under the Apache License, Version 2.0 (the "License");
@@ -13,7 +16,11 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
+<<<<<<< HEAD
 bucket_name=pact-gcp-data-eng-data-bucket
+=======
+bucket_name=[your gcs bucket name]
+>>>>>>> 03bbdd3a623e3e9e6c357abd6945e23bbf83c846
 
 gcloud sql export csv mysql-instance-source \
 gs://$bucket_name/mysql_export/stations/20180101/stations.csv \
