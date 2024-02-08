@@ -29,7 +29,7 @@ TARGET_TABLE_ID = "{}.raw_bikesharing.regions".format(PROJECT_ID)
 
 
 def load_data_from_bigquery_public(PUBLIC_TABLE_ID, TARGET_TABLE_ID):
-    client = bigquery.Client(project=PROJECT_ID)  # Projeyi belirtin
+    client = bigquery.Client(project=PROJECT_ID)  # without project id it didnt work-sso
     job_config = bigquery.QueryJobConfig(
         destination=TARGET_TABLE_ID,
         write_disposition='WRITE_TRUNCATE')
