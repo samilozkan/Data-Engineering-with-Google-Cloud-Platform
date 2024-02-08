@@ -17,6 +17,7 @@ from google.cloud import bigquery
 # TODO : Change to your project id
 PROJECT_ID = "pact-gcp-data-eng"
 PUBLIC_TABLE_ID = "bigquery-public-data.san_francisco_bikeshare.bikeshare_regions"
+                   #bigquery-public-data.san_francisco_bikeshare.bikeshare_regions#
 TARGET_TABLE_ID = "{}.raw_bikesharing.regions".format(PROJECT_ID)
 
 def load_data_from_bigquery_public(PUBLIC_TABLE_ID, TARGET_TABLE_ID):
